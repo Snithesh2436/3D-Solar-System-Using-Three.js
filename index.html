@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solar System 3D - Snithesh</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      color: white;
+      border-radius: 5px;
+      max-height: 90vh;
+      overflow-y: auto;
+      font-size: 14px;
+    }
+    label {
+      display: block;
+      margin-top: 8px;
+    }
+    input[type="range"] {
+      width: 140px;
+    }
+    button {
+      margin-top: 10px;
+      padding: 6px 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    #tooltip {
+      position: absolute;
+      background: rgba(0,0,0,0.8);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      pointer-events: none;
+      font-size: 13px;
+      display: none;
+      z-index: 10;
+    }
+    footer {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: gray;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls"></div>
+  <div id="tooltip"></div>
+  <footer>Created by Snithesh</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
